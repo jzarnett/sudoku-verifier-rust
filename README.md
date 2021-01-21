@@ -18,7 +18,9 @@ The implementation has a 25 - 250 ms delay built into it to simulate sending dat
 
 # Deployment
 
-This requires rust to be installed. Use `cargo build` to compile; `cargo run` to execute. It is suggested to run this in a `screen` session so it remains resident and so the output doesn't spam your console.
+This requires rust to be installed. Use `cargo build` to compile; `cargo run` to execute.
+It does require nightly rust, unfortunately. The libraries it depends on are just too cool for stable Rust.
+It is suggested to run this in a `screen` session so it remains resident and so the output doesn't spam your console.
 
 # Testing
 There are a few simple test files provided in the testfiles directory. You can test at the commandline with the curl utility using:
