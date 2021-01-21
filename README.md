@@ -14,7 +14,7 @@ operations to the `/verify` endpoint. This is the only implemented endpoint and 
 The endpoint will return HTTP 400 if anything is wrong
 with the provided data (including if the body is missing). It will return HTTP 200 if it is capable of parsing and understanding the data; if it is a valid Sudoku solution then a body of `1` is sent back; otherwise `0` is returned.
 
-The implementation has a 50 ms delay built into it to simulate sending data over the actual internet. It is likely that for the assignment all the servers and clients will be in the same network (or at least geographically nearby) and the delay makes the test scenario a bit more plausible.
+The implementation has a 25 - 250 ms delay built into it to simulate sending data over the actual internet. It is likely that for the assignment all the servers and clients will be in the same network (or at least geographically nearby) and the delay makes the test scenario a bit more plausible.
 
 # Deployment
 
