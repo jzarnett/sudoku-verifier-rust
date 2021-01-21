@@ -1,0 +1,7 @@
+[global]
+address = "0.0.0.0"
+port = 4590
+workers = 16
+keep_alive = 1
+log = "normal"
+limits = { forms = 32768 }
